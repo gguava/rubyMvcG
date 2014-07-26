@@ -1,14 +1,10 @@
 class Wood
-  def initialize
+  def initialize(params)
     @desc = "I am a primal wood,guava"
+    @params=params
   end
 
   def say
-    "guava1"
-    arr=Array.new
-    arr.push(1)
-    arr.push(2)
-    json_arr=JSON.parse arr
-    json_arr
+    @params[:id]+ "guava1"
   end
 end

@@ -6,7 +6,7 @@ get '/do/:c/:m' do
   load "controllers/"+params[:c]+".rb"
   control=Object.const_get(params[:c])
 
-  o=control.new
+  o=control.new(params)
   o.method(params[:m]).call
   # params[:id]
   # params.to_s
