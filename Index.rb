@@ -1,5 +1,5 @@
 require 'sinatra'
-
+load 'core/Controller.rb'
 get '/do/:c/:m' do
   #http://localhost:4567/do/Wood/say?id=9
   #"Hello #{params[:c]}--#{params[:m]}!"
