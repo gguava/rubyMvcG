@@ -10,7 +10,7 @@ class CreatTemplate
       puts "finished"
     }
   end
-  def toString(templatefileName, path, binding)
+  def showHtml(templatefileName, path, binding)
 
 
     File.open( path+"/views/"+templatefileName+".erb" ) { |fh|

@@ -1,4 +1,4 @@
-require_relative File.dirname(__FILE__) + '../core/Controller'
+
 class Page < Controller
   def add
     # gggg
