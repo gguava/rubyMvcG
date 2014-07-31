@@ -8,7 +8,7 @@ class Page < Controller
     p.gcontents="<p>hello miniMvc</p>"
     p.save
     # puts "saved"
-    @view.showHtml("pageAdd",@path,nil)
+    # @view.showHtml("pageAdd",@path,nil)
 
   end
 
