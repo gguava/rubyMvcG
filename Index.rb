@@ -1,6 +1,11 @@
 require 'sinatra'
 configure do
-  set :bind=>"192.168.1.111"
+  ip= IPSocket.getaddress(Socket.gethostname)
+  if ip.to_s.include?("192")
+    set :bind=>"192.168.1.111"
+  else
+    set :bind=>"112.124.60.115"
+  end
 end
 require File.expand_path('core/Controller', File.dirname(__FILE__))
 get '/do/:c/:m' do
