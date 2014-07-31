@@ -12,7 +12,7 @@ class CreatTemplate
   end
   def showHtml(templatefileName, path, binding)
 
-
+    puts  path+"/views/"+templatefileName+".erb"
     File.open( path+"/views/"+templatefileName+".erb" ) { |fh|
       rhtml = ERB.new( fh.read )
       # f.print ERB.result( binding )
