@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'socket'
 configure do
   ip= IPSocket.getaddress(Socket.gethostname)
   if ip.to_s.include?("192")
