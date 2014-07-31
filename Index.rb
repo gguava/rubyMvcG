@@ -13,6 +13,7 @@ get '/do/:c/:m' do
   load "controllers/"+params[:c]+".rb"
   control=Object.const_get(params[:c])
   file_path = File.dirname(__FILE__)
+  puts file_path
   obj=control.new(params,file_path)
   obj.method(params[:m]).call
   # params[:id]
